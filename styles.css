@@ -53,3 +53,39 @@ body {
   
   
   
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  z-index: -99;
+
+  height: 50px;           /* fixed size */
+  padding: 0 20px;        /* inner spacing only */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #111;
+  color: #f1f1f1;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.site-footer .creator {
+  font-weight: 500;
+}
+
+.site-footer .industry {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.colored-text {
+  color: #ff0000;
+}
