@@ -5,10 +5,10 @@
 // Target date & time
 const target = {
   year: 2026,
-  month: 1,       // 0 = January, 11 = December
-  day: 14,
-  hour: 6,       // 24-hour format
-  minute: 0,
+  month: 0,       // 0 = January, 11 = December
+  day: 2,
+  hour: 16,       // 24-hour format
+  minute: 5,
   second: 0
 };
 
