@@ -1,4 +1,5 @@
-/* =========================
+
+  /* =========================
    EDIT THESE VALUES
 ========================= */
 
@@ -11,6 +12,14 @@ const target = {
   minute: 0,
   second: 0
 };
+
+
+
+//Elements to show and hide
+const show = document.querySelectorAll('[data-show="true"]');
+const hide = document.querySelectorAll('[data-remove="true"]');
+
+show.forEach(el => el.hidden = true);
 
 // Redirect URL
 const redirectURL = "main.html";
@@ -36,8 +45,6 @@ document.getElementById("targetDate").textContent =
 
 const countdownEl = document.getElementById("countdown");
 const button = document.getElementById("redirectBtn");
-
-/*
 const timer = setInterval(() => {
   const now = new Date();
   const diff = targetDate - now;
@@ -46,29 +53,8 @@ const timer = setInterval(() => {
     clearInterval(timer);
     countdownEl.textContent = "00:00:00";
     button.style.display = "inline-block";
-    return;
-  }
-
-  const hours = Math.floor(diff / (1000 * 60 * 60));
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
-
-  countdownEl.textContent =
-    `${String(hours).padStart(2, "0")}:` +
-    `${String(minutes).padStart(2, "0")}:` +
-    `${String(seconds).padStart(2, "0")}`;
-}, 1000);
-*/
-
-
-const timer = setInterval(() => {
-  const now = new Date();
-  const diff = targetDate - now;
-
-  if (diff <= 0) {
-    clearInterval(timer);
-    countdownEl.textContent = "00:00:00";
-    button.style.display = "inline-block";
+    show.forEach(el => el.hidden = false);
+    hide.forEach(el => el.hidden = true);
     return;
   }
 
@@ -96,10 +82,4 @@ const timer = setInterval(() => {
 button.addEventListener("click", () => {
   window.location.href = redirectURL;
 });
-
-
-
-
-
-
-
+  
