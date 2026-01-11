@@ -16,8 +16,8 @@ const target = {
 
 
 //Elements to show and hide
-const show = document.querySelectorAll('[data-show="true"]');
-const hide = document.querySelectorAll('[data-remove="true"]');
+const show = document.querySelectorAll('data-show="true"');
+const hide = document.querySelectorAll('data-remove="true"');
 
 show.forEach(el => el.hidden = true);
 
