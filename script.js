@@ -1,5 +1,4 @@
-
-  /* =========================
+/* =========================
    EDIT THESE VALUES
 ========================= */
 
@@ -8,7 +7,7 @@ const target = {
   year: 2026,
   month: 1,       // 0 = January, 11 = December
   day: 14,
-  hour: 6,       // 24-hour format
+  hour: 0,       // 24-hour format
   minute: 0,
   second: 0
 };
@@ -16,10 +15,23 @@ const target = {
 
 
 //Elements to show and hide
-const show = document.querySelectorAll('data-show="true"');
-const hide = document.querySelectorAll('data-remove="true"');
+const show1 = document.getElementById("state");
+const show2 = document.getElementById("state2");
+const show3 = document.getElementById("state3");
+const show4 = document.getElementById("state4");
+const show5 = document.getElementById("state5");
 
-show.forEach(el => el.hidden = true);
+
+const hide1 = document.getElementById("rem1");
+const hide2 = document.getElementById("rem2");
+const hide3 = document.getElementById("rem3");
+const hide4 = document.getElementById("rem4");
+
+show1.style.display = 'none';
+show2.style.display = 'none';
+show3.style.display = 'none';
+show4.style.display = 'none';
+show5.style.display = 'none';
 
 // Redirect URL
 const redirectURL = "main.html";
@@ -53,8 +65,15 @@ const timer = setInterval(() => {
     clearInterval(timer);
     countdownEl.textContent = "00:00:00";
     button.style.display = "inline-block";
-    show.forEach(el => el.hidden = false);
-    hide.forEach(el => el.hidden = true);
+    show1.style.display = 'block';
+    show2.style.display = 'block';
+    show3.style.display = 'block';
+    show4.style.display = 'block';
+    show5.style.display = 'block';
+    hide1.style.display = 'none';
+    hide2.style.display = 'none';
+    hide3.style.display = 'none';
+    hide4.style.display = 'none';
     return;
   }
 
