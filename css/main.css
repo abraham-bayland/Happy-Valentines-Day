@@ -22,35 +22,6 @@
   animation: glowPulse 2s infinite;
 }
 
-@media (min-width: 400px) and (max-width: 449px) {
-  #openMsg { left: 30%; }
-}
-
-@media (min-width: 450px) and (max-width: 499px) {
-  #openMsg { left: 32%; }
-}
-
-@media (min-width: 500px) and (max-width: 549px) {
-  #openMsg { left: 34%; }
-}
-
-@media (min-width: 550px) and (max-width: 599px) {
-  #openMsg { left: 36%; }
-}
-
-@media (min-width: 600px) and (max-width: 649px) {
-  #openMsg { left: 38%; }
-}
-
-@media (min-width: 650px) and (max-width: 699px) {
-  #openMsg { left: 40%; }
-}
-
-@media (min-width: 700px) {
-  #openMsg { left: 50%; transform: translateX(-50%); }
-}
-
-
 @keyframes bounceGlow {
   0%   { transform: scale(1); }
   40%  { transform: scale(1.12); }
@@ -80,6 +51,34 @@
   border-radius: 50px;
   outline: none;
   animation: bounceGlow 2s infinite;
+}
+
+@media (min-width: 400px) and (max-width: 449px) {
+  #openMsg { left: 30%; }
+}
+
+@media (min-width: 450px) and (max-width: 499px) {
+  #openMsg { left: 32%; }
+}
+
+@media (min-width: 500px) and (max-width: 549px) {
+  #openMsg { left: 34%; }
+}
+
+@media (min-width: 550px) and (max-width: 599px) {
+  #openMsg { left: 36%; }
+}
+
+@media (min-width: 600px) and (max-width: 649px) {
+  #openMsg { left: 38%; }
+}
+
+@media (min-width: 650px) and (max-width: 699px) {
+  #openMsg { left: 40%; }
+}
+
+@media (min-width: 700px) {
+  #openMsg { left: 50%; transform: translateX(-50%); }
 }
 
 /* Message box */
@@ -1721,6 +1720,7 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
 
 
 
